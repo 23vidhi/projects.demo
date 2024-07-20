@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+
+
+
+
+}
+
+.heading {
+    background-color: #37123C;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0 0 0 0;
+}
+
+#container {
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #A99F96;
+    width: 170vh;
+
+    height: 80vh;
+
+}
+
+.choices {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-content: center;
+
+}
+
+.choice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+    margin: 1 1 1 1;
+    padding: 1 1 1 1;
+
+
+
+
+}
+
+.choice:hover {
+    cursor: pointer;
+
+    transform: scale(1.07);
+    transition: all 0.5s ease;
+
+
+
+}
+
+img {
+    height: 230 px;
+    width: 230px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 0 0 0 80px;
+    padding: 0 0 0 0;
+    border: 1px solid #000000;
+    box-shadow: 0 0 9px #000000;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    box-sizing: border-box;
+    object-fit: cover;
+    object-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+
+
+
+}
+
+#scoreboard {
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: #000000;
+    border-radius: 5%;
+    margin: 1 1 1 1;
+    padding: 1 1 1 1;
+    background-color: #A99F96;
+    color: black;
+    width: 20vh;
+}
+
+.score {}
+
+.msg-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+    width: 50vh;
+}
+
+#msg {}
