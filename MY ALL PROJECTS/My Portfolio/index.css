@@ -1,0 +1,378 @@
+/* Styles defined for the desktop or the bigger screen devices*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-image: url("https://img.freepik.com/free-photo/abstract-luxury-blur-dark-grey-black-gradient-used-as-background-studio-wall-display-your-products_1258-54562.jpg?t=st=1721669794~exp=1721673394~hmac=4c8ef2dad662bb429ea6512d9752b23bf1b8adbc6a14bd995ee97dca6829a285&w=740");
+  background-size: cover;
+  background-position: center;
+  transition: background-color 0.5s ease-in-out;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  -moz-overflow-scrolling: touch;
+  -ms-overflow-scrolling: touch;
+  -o-overflow-scrolling: touch;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.5s ease-in-out;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+.header {
+  background: transparent;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+/* Header Navbar Styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  background: transparent;
+}
+
+.logo {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo .logo-heading {
+  color: black;
+}
+
+.menu {
+  padding: 0 3rem;
+}
+
+.hamburger {
+  display: none;
+  color: black;
+  font-size: 25px;
+}
+
+.cross-icon {
+  display: none;
+}
+
+.menu .menu-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+.menu-list .menu-list-items {
+  padding: 1rem 1rem 1rem 1rem;
+  font-size: 1.3rem;
+  transition: color 0.3s ease-in-out;
+  color: black;
+  cursor: pointer;
+  position: relative;
+
+  transition: background-color 0.3s ease-in-out;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+  &:hover {
+    background-color: #f5f5f5;
+    color: black;
+  }
+}
+
+@media screen and (min-width: 856px) and (max-width: 1024px) {
+  .menu-list .menu-list-items {
+    padding: 0.3rem 0.3rem 0.3rem;
+    font-size: 1.2rem;
+  }
+}
+
+/* Main Hero Section Styles */
+.hero {
+  background-image: url("./Images/heroImg3.avif");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem 0;
+  padding: 10px;
+}
+
+.hero .intro {
+  text-align: center;
+  margin: 0.5rem;
+  padding-top: 2px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+}
+
+.hero .intro-buttons {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* About section styles */
+.about {
+  display: flex;
+  align-items: center;
+  background-image: url("https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-90363.jpg?t=st=1721670077~exp=1721673677~hmac=ef64571b0169a245ab5d82bacb05e72fdf2ef08d837225f71e287d506dee47c7&w=826");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s ease-in-out;
+  padding: 3rem 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  -moz-overflow-scrolling: touch;
+  -ms-overflow-scrolling: touch;
+  -o-overflow-scrolling: touch;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.5s ease-in-out;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.about .about-text {
+  width: 550px;
+  color: white;
+  padding: 5rem 1rem 5rem 5rem;
+}
+
+.about .about-image img {
+  height: 400px;
+  width: 450px;
+  padding: 5rem 5rem 5rem 1rem;
+}
+
+.projects {
+  background-image: url("https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-90363.jpg?t=st=1721670077~exp=1721673677~hmac=ef64571b0169a245ab5d82bacb05e72fdf2ef08d837225f71e287d506dee47c7&w=826");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s ease-in-out;
+  padding: 1.5rem 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  -moz-overflow-scrolling: touch;
+  -ms-overflow-scrolling: touch;
+  -o-overflow-scrolling: touch;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.5s ease-in-out;
+  justify-content: space-between;
+  height: 40vh;
+  width: 100%;
+}
+
+/* Contact section styles */
+.contact {
+  padding: 3rem;
+}
+
+.contact-content {
+  display: flex;
+  margin: 3rem 0;
+  justify-content: space-between;
+  color: white;
+}
+
+.contact-form-container {
+  width: 50%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form .form-controls {
+  width: 80%;
+  padding: 10px 0;
+  margin: 1.67rem 0;
+}
+
+.contact-form .form-btn {
+  width: 83%;
+}
+
+.contact-details {
+  width: 50%;
+}
+
+/* Footer Styles */
+.footer {
+  background: transparent;
+  color: #fff;
+  padding: 2rem;
+}
+
+.footer-list-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  margin: 1rem 1rem 0 1rem;
+  border-radius: 50%;
+  background-color: #53c8b6;
+}
+
+.footer-links {
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-menu {
+  padding: 0 5rem;
+}
+
+.footer-menu .footer-menu-list {
+  display: flex;
+  list-style: none;
+}
+
+/* utility classes */
+.greet-heading {
+  font-size: 1.3rem;
+  font-weight: lighter;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.my-heading {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.sub-heading {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #ccc;
+  font-weight: lighter;
+}
+
+.links:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.links {
+  border-bottom: 2px solid transparent;
+  transition: all 0.25s;
+  padding: 5px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  border: none;
+}
+
+.common-btn {
+  background-color: #35a99c;
+  color: #fff;
+  border: 2px solid #35a99c;
+  transition: all 0.25s;
+}
+
+.common-btn:hover {
+  background-color: #fff;
+  color: #35a99c;
+  border: 2px solid #35a99c;
+  outline: none;
+}
+
+.ghost-btn {
+  background-color: #fff;
+  color: #35a99c;
+  border: 2px solid #35a99c;
+  outline: none;
+}
+
+.ghost-btn:hover {
+  background-color: #35a99c;
+  color: #fff;
+  transition: all 0.25s;
+  border: 2px solid #35a99c;
+}
+
+.heading-span {
+  font-weight: bolder;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.small-para {
+  font-size: 14px;
+  color: #fff;
+}
+
+.white-text {
+  color: #fff;
+}
+
+.blue-text {
+  color: #363d73;
+}
